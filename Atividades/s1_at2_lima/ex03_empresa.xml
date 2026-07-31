@@ -1,0 +1,33 @@
+<!--Exercício 3: Empresa
+Analise o Código
+<?xml version=1.0 encoding="UTF-8">
+
+<empresa>
+<nome>Tech & Sistemas</nome>
+<cidade>Curitiba</cidade>
+</empresa>
+
+Exercício 4: Pedido de Venda
+Analise o Código
+<?xml version="1.0" encoding="UTF-8"?>
+
+<pedido>
+<cliente>
+<nome>Maria</nome>
+<itens>
+<item>Notebook</item>
+<item>Mouse</item>
+</cliente>
+</itens>
+</pedido-->
+
+O código apresenta dois erros:
+1. Na declaração XML, a versão está sem aspas (deve ser version="1.0") e falta o ponto de interrogação no fechamento ?>.
+2. O caractere "&" na tag <nome> deve ser substituído por &amp; (Tech &amp; Sistemas), pois o e-comercial é um caractere especial reservado no XML.
+
+<?xml version="1.0" encoding="UTF-8"?>
+
+<empresa>
+    <nome>Tech &amp; Sistemas</nome>
+    <cidade>Curitiba</cidade>
+</empresa>

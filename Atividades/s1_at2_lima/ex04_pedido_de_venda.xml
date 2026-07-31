@@ -1,0 +1,28 @@
+<!--Exercício 4: Pedido de Venda
+Analise o Código
+<?xml version="1.0" encoding="UTF-8"?>
+
+<pedido>
+<cliente>
+<nome>Maria</nome>
+<itens>
+<item>Notebook</item>
+<item>Mouse</item>
+</cliente>
+</itens>
+</pedido>-->
+
+O código apresenta um erro de aninhamento incorreto de tags (Proper Nesting):
+1. A tag <itens> foi aberta dentro de <cliente>, porém a tag </cliente> foi fechada antes de </itens>, violando a regra de fechamento na ordem inversa de abertura.
+
+<?xml version="1.0" encoding="UTF-8"?>
+
+<pedido>
+    <cliente>
+        <nome>Maria</nome>
+    </cliente>
+    <itens>
+        <item>Notebook</item>
+        <item>Mouse</item>
+    </itens>
+</pedido>

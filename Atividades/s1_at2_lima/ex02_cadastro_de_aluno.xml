@@ -1,0 +1,19 @@
+<!--Exercício 2: Cadastro de Aluno
+Analise o Código
+<?xml version="1.0" encoding="UTF-8"?>
+
+<aluno matricula=202501 curso="Informática">
+<nome>João Silva</nome>
+<idade=20></idade>
+</aluno>-->
+
+O código apresenta dois erros: 
+1. O valor do atributo matricula está sem aspas (deve ser matricula="202501").
+2. A tag da idade está com a sintaxe incorreta <idade=20></idade> (o correto é <idade>20</idade>).
+
+<?xml version="1.0" encoding="UTF-8"?>
+
+<aluno matricula="202501" curso="Informática">
+    <nome>João Silva</nome>
+    <idade>20</idade>
+</aluno>

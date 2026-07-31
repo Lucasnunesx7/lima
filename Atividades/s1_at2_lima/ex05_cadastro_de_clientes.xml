@@ -1,0 +1,22 @@
+<!--Exercício 5: Cadastro de Produtos
+Analise o Código
+<?xml version="1.0" encoding="UTF-8"?>
+
+<produtos>
+
+<nome produto>Notebook</nome produto>
+
+<1preco>4500</1preco>
+
+</produtos>-->
+
+O código apresenta dois erros nas regras de nomeação de tags XML:
+1. A tag <nome produto> contém espaço em branco, o que é proibido no XML (deve-se usar underline, como <nome_produto>).
+2. A tag <1preco> começa com um número (1), violando a regra de que nomes de elementos XML devem começar com letras ou underline.
+
+<?xml version="1.0" encoding="UTF-8"?>
+
+<produtos>
+    <nome_produto>Notebook</nome_produto>
+    <preco>4500</preco>
+</produtos>
