@@ -1,0 +1,62 @@
+body {
+    font-family: 'Roboto', Arial, sans-serif;
+    background-color: #0b0a0a;
+    color: #ffffff;
+    margin: 0 auto;
+    max-width: 800px;
+    padding: 30px 20px 80px 20px;
+}
+
+header {
+    text-align: center;
+    padding-bottom: 15px;
+    margin-bottom: 25px;
+}
+
+h1 {
+    color: #ffffff;
+    margin-bottom: 5px;
+}
+
+h2 {
+    color: #ffffff;
+    margin-top: 30px;
+    margin-bottom: 15px;
+}
+
+h3 {
+    color: #ffffff;
+    margin-bottom: 8px;
+}
+
+/* Estilo simples para os produtos (sem caixa/fundo) */
+.produto {
+    margin-bottom: 30px;
+}
+
+p {
+    margin: 6px 0;
+    line-height: 1.4;
+}
+
+.preco-antigo {
+    color: #ffffff;
+    font-size: 0.9em;
+}
+
+/* Rodapé fixo */
+footer {
+    background-color: #0d0d0d;
+    color: #ffffff;
+    padding: 15px 0;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    font-size: 0.9em;
+}
+
+footer p {
+    margin: 0;
+}
